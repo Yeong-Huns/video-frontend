@@ -127,3 +127,7 @@ export async function loginWithGoogle() {
 export async function loginWithGithub() {
     redirect(`${API_URL}/auth/github`)
 }
+
+export async function loginWithKakao() {
+    redirect(`${API_URL}/auth/kakao`)
+}

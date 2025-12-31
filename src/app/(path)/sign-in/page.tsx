@@ -10,9 +10,10 @@ import {useSignIn} from "@/hooks/mutations/auth/use-sign-in";
 import {toast} from "sonner";
 import google from "@/assets/google.png";
 import github from "@/assets/github-mark.svg"
+import kakao from "@/assets/kakao.svg"
 import Image from 'next/image';
 import {useRouter} from "next/navigation";
-import {loginWithGithub, loginWithGoogle} from "@/actions/auth/auth";
+import {loginWithGithub, loginWithGoogle, loginWithKakao} from "@/actions/auth/auth";
 
 export default function SignInPage() {
     const [email, setEmail] = useState("");
@@ -80,6 +81,11 @@ export default function SignInPage() {
                             <Button onClick={loginWithGithub} disabled={isSignIn} variant={'outline'} size={"icon-lg"}
                                     className={'rounded-lg'}>
                                 <Image width={24} height={24} src={github.src} alt={'github'}
+                                       className={'cursor-pointer rounded- object-cover'}/>
+                            </Button>
+                            <Button onClick={loginWithKakao} disabled={isSignIn} variant={'outline'} size={"icon-lg"}
+                                    className={'rounded-lg'}>
+                                <Image width={24} height={24} src={kakao.src} alt={'kakao'}
                                        className={'cursor-pointer rounded- object-cover'}/>
                             </Button>
                         </div>
