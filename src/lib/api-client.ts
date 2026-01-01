@@ -5,8 +5,9 @@ import {parse} from "set-cookie-parser";
 import {API_URL} from "@/lib/constant";
 import {signOutAndRedirect} from "@/actions/auth/auth";
 
-type FetchOptions = RequestInit & {
+type FetchOptions = Omit<RequestInit, "body"> & {
     skipRefresh?: boolean; /* 재발급 무한루프 방지 */
+    body?: any;
 };
 
 export async function fetchApi<T>(
@@ -89,7 +90,8 @@ export async function fetchApi<T>(
     if (!response.ok) {
         if (response.status !== 401) {
             console.error(`API Error: ${response.status} ${url}`);
-            throw new Error(`API Request Failed: ${response.status}`);
+            const errorData = await response.json().catch(() => ({}));
+            throw new Error(errorData.message || `API Request Failed: ${response.status}`);
         }
     }
 
@@ -99,8 +101,8 @@ export async function fetchApi<T>(
 
     const contentType = response.headers.get("Content-Type");
     if (contentType && contentType.includes("application/json")) {
-        return response.json() as Promise<T>;
+        return await response.json() as Promise<T>;
     } else {
-        return response.text() as unknown as Promise<T>;
+        return await response.text() as unknown as Promise<T>;
     }
 }

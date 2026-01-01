@@ -1,19 +1,14 @@
 import {UseMutationCallback} from "@/types";
-import {useSetAtom} from "jotai";
-import {userAtom} from "@/store/auth";
 import {useMutation} from "@tanstack/react-query";
-import {signInAction} from "@/actions/auth/auth";
+import {signUpAction} from "@/actions/auth/auth";
 
-export function useSignIn(callbacks?: UseMutationCallback) {
-    const setPayload = useSetAtom(userAtom);
-
+export function useSignUp(callbacks?: UseMutationCallback) {
     return useMutation({
-        mutationFn: signInAction,
+        mutationFn: signUpAction,
         onError: (error) => {
             if (callbacks?.onError) callbacks.onError(error)
         },
         onSuccess: (data) => {
-            setPayload(data)
             if (callbacks?.onSuccess) callbacks.onSuccess();
         }
     })

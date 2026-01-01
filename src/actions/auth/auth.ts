@@ -6,10 +6,21 @@ import {API_URL} from "@/lib/constant";
 import parse from "set-cookie-parser";
 import {jwtDecode} from "jwt-decode";
 import {Payload} from "@/store/auth";
+import {fetchApi} from "@/lib/api-client";
 
-interface SignInParams {
+type SignInParams = Omit<SignUpParams, "name">
+
+interface SignUpParams {
     email: string,
-    password: string
+    password: string,
+    name: string
+}
+
+export async function signUpAction(params: SignUpParams) {
+    return await fetchApi("/auth/sign-up", {
+        method: "POST",
+        body: params
+    })
 }
 
 export async function signInAction(params: SignInParams) {
@@ -45,7 +56,7 @@ export async function signInAction(params: SignInParams) {
                     name: cookie.name,
                     value: cookie.value,
                     httpOnly: cookie.httpOnly,
-                    secure: cookie.secure, // 배포 환경에선 true여야 함
+                    secure: cookie.secure,
                     path: cookie.path,
                     maxAge: cookie.maxAge,
                     expires: cookie.expires,
