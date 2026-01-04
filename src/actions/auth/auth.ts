@@ -6,6 +6,7 @@ import {API_URL, COOKIE_ACCESS, COOKIE_REFRESH} from "@/lib/constant";
 import parse from "set-cookie-parser";
 import {jwtDecode} from "jwt-decode";
 import {Payload} from "@/store/auth";
+import {fetchApi} from "@/lib/api-client";
 
 type SignInParams = Omit<SignUpParams, "name">
 
@@ -13,6 +14,13 @@ interface SignUpParams {
     email: string,
     password: string,
     name: string
+}
+
+export async function signUpAction(params: SignUpParams) {
+    return await fetchApi("/auth/sign-up", {
+        method: "POST",
+        body: params
+    })
 }
 
 async function syncBackendCookies(response: Response, cookieStore: any): Promise<string | null> {
