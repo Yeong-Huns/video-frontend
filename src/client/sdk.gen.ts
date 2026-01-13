@@ -2,7 +2,7 @@
 
 import type { Client, Options as Options2, TDataShape } from './client';
 import { client } from './client.gen';
-import type { AccountControllerCreateData, AccountControllerCreateResponses, AccountControllerFindAllData, AccountControllerFindAllResponses, AccountControllerFindOneData, AccountControllerFindOneResponses, AccountControllerRemoveData, AccountControllerRemoveResponses, AccountControllerUpdateData, AccountControllerUpdateResponses, AuthControllerGithubCallbackData, AuthControllerGithubLoginData, AuthControllerGithubLoginResponses, AuthControllerGoogleCallbackData, AuthControllerGoogleLoginData, AuthControllerGoogleLoginResponses, AuthControllerKakaoCallbackData, AuthControllerKakaoLoginData, AuthControllerKakaoLoginResponses, AuthControllerRefreshAccessTokenData, AuthControllerRefreshAccessTokenErrors, AuthControllerRefreshAccessTokenResponses, AuthControllerSignInData, AuthControllerSignInErrors, AuthControllerSignInResponses, AuthControllerSignOutData, AuthControllerSignOutResponses, AuthControllerSignUpData, AuthControllerSignUpErrors, AuthControllerSignUpResponses, CourseCategoryControllerCreateData, CourseCategoryControllerCreateResponses, CourseCategoryControllerFindAllData, CourseCategoryControllerFindAllResponses, CourseCategoryControllerFindOneData, CourseCategoryControllerFindOneResponses, CourseCategoryControllerRemoveData, CourseCategoryControllerRemoveResponses, CourseCategoryControllerUpdateData, CourseCategoryControllerUpdateResponses, CourseCommentControllerCreateData, CourseCommentControllerCreateResponses, CourseCommentControllerFindAllData, CourseCommentControllerFindAllResponses, CourseCommentControllerFindOneData, CourseCommentControllerFindOneResponses, CourseCommentControllerRemoveData, CourseCommentControllerRemoveResponses, CourseCommentControllerUpdateData, CourseCommentControllerUpdateResponses, CourseControllerCreateData, CourseControllerCreateResponses, CourseControllerDeleteData, CourseControllerDeleteResponses, CourseControllerFindAllData, CourseControllerFindAllResponses, CourseControllerFindOneData, CourseControllerFindOneResponses, CourseControllerUpdateData, CourseControllerUpdateResponses, CourseEnrollmentControllerCreateData, CourseEnrollmentControllerCreateResponses, CourseEnrollmentControllerFindAllData, CourseEnrollmentControllerFindAllResponses, CourseEnrollmentControllerFindOneData, CourseEnrollmentControllerFindOneResponses, CourseEnrollmentControllerRemoveData, CourseEnrollmentControllerRemoveResponses, CourseEnrollmentControllerUpdateData, CourseEnrollmentControllerUpdateResponses, CourseQuestionControllerCreateData, CourseQuestionControllerCreateResponses, CourseQuestionControllerFindAllData, CourseQuestionControllerFindAllResponses, CourseQuestionControllerFindOneData, CourseQuestionControllerFindOneResponses, CourseQuestionControllerRemoveData, CourseQuestionControllerRemoveResponses, CourseQuestionControllerUpdateData, CourseQuestionControllerUpdateResponses, CourseReviewControllerCreateData, CourseReviewControllerCreateResponses, CourseReviewControllerFindAllData, CourseReviewControllerFindAllResponses, CourseReviewControllerFindOneData, CourseReviewControllerFindOneResponses, CourseReviewControllerRemoveData, CourseReviewControllerRemoveResponses, CourseReviewControllerUpdateData, CourseReviewControllerUpdateResponses, LectureActivityControllerCreateData, LectureActivityControllerCreateResponses, LectureActivityControllerFindAllData, LectureActivityControllerFindAllResponses, LectureActivityControllerFindOneData, LectureActivityControllerFindOneResponses, LectureActivityControllerRemoveData, LectureActivityControllerRemoveResponses, LectureActivityControllerUpdateData, LectureActivityControllerUpdateResponses, LectureControllerCreateData, LectureControllerCreateResponses, LectureControllerFindAllData, LectureControllerFindAllResponses, LectureControllerFindOneData, LectureControllerFindOneResponses, LectureControllerRemoveData, LectureControllerRemoveResponses, LectureControllerUpdateData, LectureControllerUpdateResponses, RoleControllerCreateRoleData, RoleControllerCreateRoleErrors, RoleControllerCreateRoleResponses, SectionControllerCreateData, SectionControllerCreateResponses, SectionControllerFindAllData, SectionControllerFindAllResponses, SectionControllerFindOneData, SectionControllerFindOneResponses, SectionControllerRemoveData, SectionControllerRemoveResponses, SectionControllerUpdateData, SectionControllerUpdateResponses, UserControllerCreateData, UserControllerCreateResponses, UserControllerFindAllData, UserControllerFindAllResponses, UserControllerFindOneData, UserControllerFindOneResponses, UserControllerRemoveData, UserControllerRemoveResponses, UserControllerUpdateData, UserControllerUpdateResponses, VerificationTokenControllerCreateData, VerificationTokenControllerCreateResponses, VerificationTokenControllerFindAllData, VerificationTokenControllerFindAllResponses, VerificationTokenControllerFindOneData, VerificationTokenControllerFindOneResponses, VerificationTokenControllerRemoveData, VerificationTokenControllerRemoveResponses, VerificationTokenControllerUpdateData, VerificationTokenControllerUpdateResponses } from './types.gen';
+import type { AccountControllerCreateData, AccountControllerCreateResponses, AccountControllerFindAllData, AccountControllerFindAllResponses, AccountControllerFindOneData, AccountControllerFindOneResponses, AccountControllerRemoveData, AccountControllerRemoveResponses, AccountControllerUpdateData, AccountControllerUpdateResponses, AuthControllerGithubCallbackData, AuthControllerGithubLoginData, AuthControllerGithubLoginResponses, AuthControllerGoogleCallbackData, AuthControllerGoogleLoginData, AuthControllerGoogleLoginResponses, AuthControllerKakaoCallbackData, AuthControllerKakaoLoginData, AuthControllerKakaoLoginResponses, AuthControllerRefreshAccessTokenData, AuthControllerRefreshAccessTokenErrors, AuthControllerRefreshAccessTokenResponses, AuthControllerSignInData, AuthControllerSignInErrors, AuthControllerSignInResponses, AuthControllerSignOutData, AuthControllerSignOutResponses, AuthControllerSignUpData, AuthControllerSignUpErrors, AuthControllerSignUpResponses, CourseCategoryControllerCreateData, CourseCategoryControllerCreateResponses, CourseCategoryControllerFindAllData, CourseCategoryControllerFindAllResponses, CourseCategoryControllerFindOneData, CourseCategoryControllerFindOneResponses, CourseCategoryControllerRemoveData, CourseCategoryControllerRemoveResponses, CourseCategoryControllerUpdateData, CourseCategoryControllerUpdateResponses, CourseCommentControllerCreateData, CourseCommentControllerCreateResponses, CourseCommentControllerFindAllData, CourseCommentControllerFindAllResponses, CourseCommentControllerFindOneData, CourseCommentControllerFindOneResponses, CourseCommentControllerRemoveData, CourseCommentControllerRemoveResponses, CourseCommentControllerUpdateData, CourseCommentControllerUpdateResponses, CourseControllerCreateData, CourseControllerCreateResponses, CourseControllerDeleteData, CourseControllerDeleteResponses, CourseControllerFindAllData, CourseControllerFindAllResponses, CourseControllerFindOneData, CourseControllerFindOneResponses, CourseControllerUpdateData, CourseControllerUpdateResponses, CourseEnrollmentControllerCreateData, CourseEnrollmentControllerCreateResponses, CourseEnrollmentControllerFindAllData, CourseEnrollmentControllerFindAllResponses, CourseEnrollmentControllerFindOneData, CourseEnrollmentControllerFindOneResponses, CourseEnrollmentControllerRemoveData, CourseEnrollmentControllerRemoveResponses, CourseEnrollmentControllerUpdateData, CourseEnrollmentControllerUpdateResponses, CourseQuestionControllerCreateData, CourseQuestionControllerCreateResponses, CourseQuestionControllerFindAllData, CourseQuestionControllerFindAllResponses, CourseQuestionControllerFindOneData, CourseQuestionControllerFindOneResponses, CourseQuestionControllerRemoveData, CourseQuestionControllerRemoveResponses, CourseQuestionControllerUpdateData, CourseQuestionControllerUpdateResponses, CourseReviewControllerCreateData, CourseReviewControllerCreateResponses, CourseReviewControllerFindAllData, CourseReviewControllerFindAllResponses, CourseReviewControllerFindOneData, CourseReviewControllerFindOneResponses, CourseReviewControllerRemoveData, CourseReviewControllerRemoveResponses, CourseReviewControllerUpdateData, CourseReviewControllerUpdateResponses, LectureActivityControllerCreateData, LectureActivityControllerCreateResponses, LectureActivityControllerFindAllData, LectureActivityControllerFindAllResponses, LectureActivityControllerFindOneData, LectureActivityControllerFindOneResponses, LectureActivityControllerRemoveData, LectureActivityControllerRemoveResponses, LectureActivityControllerUpdateData, LectureActivityControllerUpdateResponses, LectureControllerCreateData, LectureControllerCreateResponses, LectureControllerFindOneData, LectureControllerFindOneResponses, LectureControllerRemoveData, LectureControllerRemoveResponses, LectureControllerUpdateData, LectureControllerUpdateResponses, RoleControllerCreateRoleData, RoleControllerCreateRoleErrors, RoleControllerCreateRoleResponses, SectionControllerCreateData, SectionControllerCreateResponses, SectionControllerFindOneData, SectionControllerFindOneResponses, SectionControllerRemoveData, SectionControllerRemoveResponses, SectionControllerUpdateData, SectionControllerUpdateResponses, UserControllerCreateData, UserControllerCreateResponses, UserControllerFindAllData, UserControllerFindAllResponses, UserControllerFindOneData, UserControllerFindOneResponses, UserControllerRemoveData, UserControllerRemoveResponses, UserControllerUpdateData, UserControllerUpdateResponses, VerificationTokenControllerCreateData, VerificationTokenControllerCreateResponses, VerificationTokenControllerFindAllData, VerificationTokenControllerFindAllResponses, VerificationTokenControllerFindOneData, VerificationTokenControllerFindOneResponses, VerificationTokenControllerRemoveData, VerificationTokenControllerRemoveResponses, VerificationTokenControllerUpdateData, VerificationTokenControllerUpdateResponses } from './types.gen';
 
 export type Options<TData extends TDataShape = TDataShape, ThrowOnError extends boolean = boolean> = Options2<TData, ThrowOnError> & {
     /**
@@ -254,10 +254,16 @@ export const courseControllerUpdate = <ThrowOnError extends boolean = false>(opt
     }
 });
 
-export const sectionControllerFindAll = <ThrowOnError extends boolean = false>(options?: Options<SectionControllerFindAllData, ThrowOnError>) => (options?.client ?? client).get<SectionControllerFindAllResponses, unknown, ThrowOnError>({ url: '/section', ...options });
-
+/**
+ * 새 섹션 생성
+ */
 export const sectionControllerCreate = <ThrowOnError extends boolean = false>(options: Options<SectionControllerCreateData, ThrowOnError>) => (options.client ?? client).post<SectionControllerCreateResponses, unknown, ThrowOnError>({
-    url: '/section',
+    security: [{
+            in: 'cookie',
+            name: 'accessToken',
+            type: 'apiKey'
+        }],
+    url: '/section/courses/{courseId}/sections',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -265,12 +271,42 @@ export const sectionControllerCreate = <ThrowOnError extends boolean = false>(op
     }
 });
 
-export const sectionControllerRemove = <ThrowOnError extends boolean = false>(options: Options<SectionControllerRemoveData, ThrowOnError>) => (options.client ?? client).delete<SectionControllerRemoveResponses, unknown, ThrowOnError>({ url: '/section/{id}', ...options });
+/**
+ * 섹션 상세 조회
+ */
+export const sectionControllerFindOne = <ThrowOnError extends boolean = false>(options: Options<SectionControllerFindOneData, ThrowOnError>) => (options.client ?? client).get<SectionControllerFindOneResponses, unknown, ThrowOnError>({
+    security: [{
+            in: 'cookie',
+            name: 'accessToken',
+            type: 'apiKey'
+        }],
+    url: '/section/sections/{sectionId}',
+    ...options
+});
 
-export const sectionControllerFindOne = <ThrowOnError extends boolean = false>(options: Options<SectionControllerFindOneData, ThrowOnError>) => (options.client ?? client).get<SectionControllerFindOneResponses, unknown, ThrowOnError>({ url: '/section/{id}', ...options });
+/**
+ * 섹션 삭제
+ */
+export const sectionControllerRemove = <ThrowOnError extends boolean = false>(options: Options<SectionControllerRemoveData, ThrowOnError>) => (options.client ?? client).delete<SectionControllerRemoveResponses, unknown, ThrowOnError>({
+    security: [{
+            in: 'cookie',
+            name: 'accessToken',
+            type: 'apiKey'
+        }],
+    url: '/section/{sectionId}',
+    ...options
+});
 
+/**
+ * 섹션 업데이트
+ */
 export const sectionControllerUpdate = <ThrowOnError extends boolean = false>(options: Options<SectionControllerUpdateData, ThrowOnError>) => (options.client ?? client).patch<SectionControllerUpdateResponses, unknown, ThrowOnError>({
-    url: '/section/{id}',
+    security: [{
+            in: 'cookie',
+            name: 'accessToken',
+            type: 'apiKey'
+        }],
+    url: '/section/{sectionId}',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -278,10 +314,16 @@ export const sectionControllerUpdate = <ThrowOnError extends boolean = false>(op
     }
 });
 
-export const lectureControllerFindAll = <ThrowOnError extends boolean = false>(options?: Options<LectureControllerFindAllData, ThrowOnError>) => (options?.client ?? client).get<LectureControllerFindAllResponses, unknown, ThrowOnError>({ url: '/lecture', ...options });
-
+/**
+ * 새 강의 생성
+ */
 export const lectureControllerCreate = <ThrowOnError extends boolean = false>(options: Options<LectureControllerCreateData, ThrowOnError>) => (options.client ?? client).post<LectureControllerCreateResponses, unknown, ThrowOnError>({
-    url: '/lecture',
+    security: [{
+            in: 'cookie',
+            name: 'accessToken',
+            type: 'apiKey'
+        }],
+    url: '/lecture/sections/{sectionId}/lectures',
     ...options,
     headers: {
         'Content-Type': 'application/json',
@@ -289,12 +331,42 @@ export const lectureControllerCreate = <ThrowOnError extends boolean = false>(op
     }
 });
 
-export const lectureControllerRemove = <ThrowOnError extends boolean = false>(options: Options<LectureControllerRemoveData, ThrowOnError>) => (options.client ?? client).delete<LectureControllerRemoveResponses, unknown, ThrowOnError>({ url: '/lecture/{id}', ...options });
+/**
+ * 개별 강의 삭제
+ */
+export const lectureControllerRemove = <ThrowOnError extends boolean = false>(options: Options<LectureControllerRemoveData, ThrowOnError>) => (options.client ?? client).delete<LectureControllerRemoveResponses, unknown, ThrowOnError>({
+    security: [{
+            in: 'cookie',
+            name: 'accessToken',
+            type: 'apiKey'
+        }],
+    url: '/lecture/{lectureId}',
+    ...options
+});
 
-export const lectureControllerFindOne = <ThrowOnError extends boolean = false>(options: Options<LectureControllerFindOneData, ThrowOnError>) => (options.client ?? client).get<LectureControllerFindOneResponses, unknown, ThrowOnError>({ url: '/lecture/{id}', ...options });
+/**
+ * 개별 강의 상세 정보
+ */
+export const lectureControllerFindOne = <ThrowOnError extends boolean = false>(options: Options<LectureControllerFindOneData, ThrowOnError>) => (options.client ?? client).get<LectureControllerFindOneResponses, unknown, ThrowOnError>({
+    security: [{
+            in: 'cookie',
+            name: 'accessToken',
+            type: 'apiKey'
+        }],
+    url: '/lecture/{lectureId}',
+    ...options
+});
 
+/**
+ * 개별 강의 수정
+ */
 export const lectureControllerUpdate = <ThrowOnError extends boolean = false>(options: Options<LectureControllerUpdateData, ThrowOnError>) => (options.client ?? client).patch<LectureControllerUpdateResponses, unknown, ThrowOnError>({
-    url: '/lecture/{id}',
+    security: [{
+            in: 'cookie',
+            name: 'accessToken',
+            type: 'apiKey'
+        }],
+    url: '/lecture/{lectureId}',
     ...options,
     headers: {
         'Content-Type': 'application/json',
